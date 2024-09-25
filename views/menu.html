@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+</head>
+<style>
+    /* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3f3f3f, #eeeeee); /* Fondo degradado */
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Barra de navegación */
+.menu {
+    background-color: #3f3f3f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 0px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    background-color: #6cb3a8; /* Color de la opción activa */
+    border-radius: 5px;
+
+}
+.btn-logout:hover {
+    background-color: red;
+}
+</style>
+<body>
+    <div class="form-container">
+
+        <form id="registerForm">
+    <h1>Menú</h1>
+    <form action="/valida" method="post"class="menu">
+    <ul>
+        <a>Registrar formularios:</a>
+        
+        <li><a href="detalle-v">Detalle_Venta</a></li>
+    </ul>
+    <a href="/">Cerrar sesión</a>
+   </form>
+    </div>
+</body>
+</html>
